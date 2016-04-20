@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="js/sheetrock.min.js"></script>
+  <script src="js/handlebars.min.js"></script>
+  <style type="text/css">
+  </style>
+  <title>Sheetrock 1.0 Example 1 by chriszarate</title>
+<script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+  // Sheetrock.js 1.0 Example 1
+  // https://chriszarate.github.io/sheetrock/
+
+  // The most basic use case of Sheetrock simply fetches the an 
+  // entire worksheet and loads it into a <table>.
+
+  // Define spreadsheet URL.
+  var mySpreadsheet = 'https://docs.google.com/spreadsheets/d/1CKXPSQ9_LAJRkiX79ZetPmiDaQjCE1n73Op5tuuxGBY/edit#gid=1';
+
+  // Load an entire worksheet.
+  $('#statistics').sheetrock({
+    url: mySpreadsheet,
+    fetchSize: 100
+  });
+});//]]> 
+</script>
+</head>
+<body>
+  <table id="statistics" class="table table-condensed table-striped"></table>
+</body>
+</html>
+
